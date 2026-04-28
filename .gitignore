@@ -1,4 +1,5 @@
 my_venv/
+venv/
 Python-3.14.3/
 *.tar.xz
 __pycache__
