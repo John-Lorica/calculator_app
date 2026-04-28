@@ -1,0 +1,6 @@
+my_venv/
+Python-3.14.3/
+*.tar.xz
+__pycache__
+cpython-314
+*.py[cod]
