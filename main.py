@@ -18,3 +18,4 @@ button.place(x=110, y=80)
 root.mainloop()
 
 # study TKinter Entry Widget and TKinter Button
+# realized that I have specific things I need to study in TKinter instead of all of it
