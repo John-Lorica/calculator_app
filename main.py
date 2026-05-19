@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox
 
 # To create the main window
 root = tk.Tk()
@@ -13,6 +14,13 @@ label.place(x=110, y=40)
 button = tk.Button(root, text='Start', command=lambda: label.config(
     text='Welcome!'))
 button.place(x=120, y=80)
+
+buttonframe = tk.Frame(root)
+buttonframe.columnconfigure(0, weight=1)
+buttonframe.columnconfigure(1, weight=1)
+buttonframe.columnconfigure(2, weight=1)
+
+btn1 = tk.Button(buttonframe, text='1', font=('Arial', 18))
 
 label = tk.Label(root, text='Placeholder')
 label.place(x=110, y=200)
