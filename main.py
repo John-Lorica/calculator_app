@@ -13,12 +13,18 @@ class MyGUI:
         # The size
         root.geometry('300x400')
 
+        self.root = tk.Tk()
+
         self.menubar = tk.Menu(self.root)
 
         self.filemenu = tk.Menu(self.menubar, tearoff=0)
         self.filemenu.add_command(label="Close", command=self.on_closing)
         self.filemenu.add_separator()
         self.filemenu.add_command(label="Close Without Question", command=exit)
+
+        self.actionmenu = tk.Menu(self.menubar, tearoff=0)
+        self.actionmenu.add_command(
+            label="Show Message", command=self.show_message)
 
         label = tk.Label(root, text='Hello, TKinter!')
         label.place(x=110, y=40)
